@@ -20,7 +20,7 @@ body {
 .heart-animation {
     position: absolute;
     top: -18%;
-    left: 55%;
+    left: 40%;
     transform: translateX(-50%);
     width: 100px;
     height: 150px;
