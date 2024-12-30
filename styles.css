@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3e5f5;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+}
+
+.profile-image {
+    width: 300px;
+    border-radius: 15%;
+}
+
+.heart-animation {
+    position: absolute;
+    top: -18%;
+    left: 43%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 150px;
+    background: url('heart.png') no-repeat center center;
+    background-size: contain;
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 20%, 50%, 80%, 100% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.2);
+    }
+}.message {
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон */
+    padding: 15px;
+    border-radius: 10px;
+    color: #333; /* Цвет текста */
+    font-size: 1.2em; /* Размер шрифта */
+}
